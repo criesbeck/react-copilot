@@ -5,7 +5,7 @@
 - Use functional components.
 - Use arrow functions.
 - Indent in prettier format.
-- Ensure no linting errors.
+- Fix all linting errors.
 - Put calls to network or database services in separate module files.
 - Import functions and types explicitly by name.
 - Use semicolons at the end of each statement.
@@ -15,16 +15,16 @@
 - Use try/catch to catch errors in async code.
 - If authentication is needed, yse Firebase Google authentication.
 - If a persistent data store is needed, use Firebase Realtime Database.
-- If multiple screen pages are needed, use Tanstack Router and include a navigation bar with links to each screen.
+- If an app has more than one screen, add a navigation bar with links to each screen.
 
 # Styling
 
 - Use Tailwind 4 for styling.
-- Use class names for styling.
-- Use Tailwind's utility classes for layout and spacing.
-- Use Tailwind's typography classes for text styling.
-- Use Tailwind's color classes for background and text colors.
-- Use Tailwind's responsive classes for mobile and desktop layouts.
+- Use Tailwind classes to style elements.
+- Use Tailwind utility classes for layout and spacing.
+- Use Tailwind typography classes for text styling.
+- Use Tailwind color classes for background and text colors.
+- Use Tailwind responsive classes for mobile and desktop layouts.
 
 # Testing
 
@@ -33,13 +33,13 @@
 - Put test files in the same directory as the component being tested.
 - Use React Testing Library for testing React components.
 - Use Jest DOM for testing DOM elements.
-- Mock modules with network or database calls when testing code that imports those modules.
+- Use `vi.mock()` to mock modules with network or database calls when testing code that imports those modules.
 - Use the `describe` block for each major set of tests.
 - Use the `it` block for each individual test case.
 - Use the `expect` function to make assertions about the rendered output.
-- Use the `beforeEach` block to set up any necessary state or props before each test.
-- Use the `afterEach` block to clean up any state or props after each test.
-- Import functions and types explicitly by name.
+- Use the `beforeEach` block to set up any necessary state, props, and mocks before each test.
+- Use the `afterEach` block to clean up any state, props, or mocks after each test.
+- Import functions and types into test code explicitly by name.
 
 ## Folder Structure
 
