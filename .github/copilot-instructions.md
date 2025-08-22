@@ -29,7 +29,7 @@
 # Testing
 
 - Use Vitest for testing.
-- Write unit tests for all components and utilities.
+- Write unit tests first for all components and utilities, before writing component code.
 - Put test files in the same directory as the component being tested.
 - Use React Testing Library for testing React components.
 - Use Jest DOM for testing DOM elements.
