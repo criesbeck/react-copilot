@@ -2,6 +2,12 @@
 
 - Use Typescript.
 - Use React 19 with React Compiler enabled.
+- Define the main app component in `App.tsx`.
+- Put most code in components in the `/src/components` folder.
+- Put types and Zod schemas in the `/src/types` folder.
+- Put shared JavaScript code in the `/src/utilities` folder.
+- Use React hooks for state and lifecycle management.
+- Use React Context for shared state.
 - Use functional components.
 - Use arrow functions.
 - Indent in prettier format.

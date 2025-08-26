@@ -21,3 +21,9 @@
 - The team member who was typing stops and clicks Rotate.
 - The list of names rotates to put the next team member first and highlighted. The timer resets to the rotation time. The button name changes to Start.
 - The process repeats.
+
+# Coding notes
+
+- Use setInterval() to implement the timer.
+- Use AudioContext to play sounds.
+- Define and import a MockAudioContext in unit tests.
