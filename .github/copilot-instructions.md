@@ -3,9 +3,6 @@
 - Use Typescript.
 - Use React 19 with React Compiler enabled.
 - Define the main app component in `App.tsx`.
-- Put most code in components in the `/src/components` folder.
-- Put types and Zod schemas in the `/src/types` folder.
-- Put shared JavaScript code in the `/src/utilities` folder.
 - Use React hooks for state and lifecycle management.
 - Use React Context for shared state.
 - Use functional components.
@@ -19,31 +16,21 @@
 - Use const variables when possible.
 - Use async/await for promises.
 - Use try/catch to catch errors in async code.
-- If authentication is needed, yse Firebase Google authentication.
+- If authentication is needed, use Firebase Google authentication.
 - If a persistent data store is needed, use Firebase Realtime Database.
 - If an app has more than one screen, add a navigation bar with links to each screen.
 
 # Styling
 
 - Use Tailwind 4 for styling.
-- Use Tailwind classes to style elements.
-- Use Tailwind utility classes for layout and spacing.
-- Use Tailwind typography classes for text styling.
-- Use Tailwind color classes for background and text colors.
-- Use Tailwind responsive classes for mobile and desktop layouts.
+- Use Tailwind class names for all styling.
 
 # Testing
 
 - Use Vitest for testing.
 - Put test files in the same directory as the component being tested.
 - Use React Testing Library for testing React components.
-- Use Jest DOM for testing DOM elements.
 - Use `vi.mock()` to mock modules with network or database calls when testing code that imports those modules.
-- Use the `describe` block for each major set of tests.
-- Use the `it` block for each individual test case.
-- Use the `expect` function to make assertions about the rendered output.
-- Use the `beforeEach` block to set up any necessary state, props, and mocks before each test.
-- Use the `afterEach` block to clean up any state, props, or mocks after each test.
 - Import functions and types into test code explicitly by name.
 
 ## Folder Structure
