@@ -24,6 +24,7 @@
 
 - Use Tailwind 4 for styling.
 - Use Tailwind class names for all styling.
+- Create a responsive design that works for mobile and desktop.
 
 # Testing
 
