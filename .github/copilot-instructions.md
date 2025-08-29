@@ -5,8 +5,10 @@
 - Define the main app component in `App.tsx`.
 - Use React hooks for state and lifecycle management.
 - Use React Context for shared state.
+- Use Clean Code principles: meaningful names, small functions, DRY, single responsibility principle, etc.
 - Use functional components.
 - Use arrow functions.
+- Do not use `React.FC` to type component functions.
 - Indent in prettier format.
 - Fix all linting errors.
 - Put calls to network or database services in separate module files.
