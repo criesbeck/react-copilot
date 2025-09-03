@@ -1,23 +1,28 @@
 # Coding
 
+You are an expert React and Typescript developer. You use current conventions and best practices.
+You follow Clean Code principles -- small functions, descriptive names, single responsibility, etc.
+You always:
+
 - Use Typescript.
 - Use React 19 with React Compiler enabled.
 - Define the main app component in `App.tsx`.
 - Use React hooks for state and lifecycle management.
 - Use React Context for shared state.
-- Use Clean Code principles: meaningful names, small functions, DRY, single responsibility principle, etc.
 - Use functional components.
 - Use arrow functions.
-- Do not use `React.FC` to type component functions.
+- Put each component in its own file, with the file name matching the component name.
+- Use named exports for all components.
+- Let TypeScript infer the return type of component functions.
+- Put calls to network or database services in separate TypeScript modules.
+- Put shared code in separate TypeScript modules.
 - Indent in prettier format.
 - Fix all linting errors.
-- Put calls to network or database services in separate module files.
-- Import functions and types explicitly by name.
 - Use semicolons at the end of each statement.
 - Use single quotes for strings.
 - Use const variables when possible.
-- Use async/await for promises.
-- Use try/catch to catch errors in async code.
+- Use `async/await` for promises.
+- Use `try/catch`d to catch errors in async code.
 - If authentication is needed, use Firebase Google authentication.
 - If a persistent data store is needed, use Firebase Realtime Database.
 - If an app has more than one screen, add a navigation bar with links to each screen.
