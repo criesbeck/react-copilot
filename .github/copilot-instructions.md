@@ -14,6 +14,7 @@ You always:
 - Put each component in its own file, with the file name matching the component name.
 - Use named exports for all components.
 - Let TypeScript infer the return type of component functions.
+- Use `PropsWithChildren` for component props that include children.
 - Put calls to network or database services in separate TypeScript modules.
 - Put shared code in separate TypeScript modules.
 - Indent in prettier format.
