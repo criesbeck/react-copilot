@@ -9,14 +9,13 @@ Node 22 or greater.
 
 ## Usage
 
+To create a new app, run the following commands in your terminal, replacing `your-app-name` with the name of your app.
+
 ```
-mkdir your-app-name
+npx gitpick criesbeck/react-ts-vitest your-app-name
 cd your-app-name
-npx degit criesbeck/react-ts-vitest
 npm install
 ```
-Note: degit sometimes fails to say it is done after announcing it has cloned the repo.
-If that happens, type control-C and then do `npm install`.
 
 ## Test
 
@@ -58,6 +57,10 @@ If everything is working, set up [your local and remote repositories](https://do
 
 ```
 your-app-name
+|-- .github
+|   └── copilot-instructions.md
+|-- docs
+|   └── app-vision.md
 ├── public
 │   └── robots.txt
 │   ├── vite.svg
