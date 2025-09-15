@@ -4,24 +4,24 @@
 
 # Users
 
-- Users are software development teams who do mob programming.
+- Users are software development teams who do mob programming with drivers and navigators.
 
 # Value proposition
 
-An easy to use rotation timer for mob programming sessions with drivers and navigators.
+An easy to use rotation timer for managing and tracking mob programming sessions.
 
 # Key features
-Mobile-friendly one-screen design with 
-  - large timer
-  - one large button to start and stop the timer
-  - a list of the team members, in shuffled order, with a checkmark next to each name, and the name of the current driver team clearly highlighted
-Simple management operations:
-  - You can tap names to uncheck them and they will be skipped in the rotation.
-  - At the start of a rotation, you can bump the rotation time for the remainder of the session up or down in one-minute increments. 
-Alert features:
-  - A beep sounds when one minute is left in the current turn.
-  - The timer changes color when one minute is left.
-  - An alarm sounds when time is up.
+Simple mobile-friendly one-screen design with the app name at the top, and below it:
+  - large countdown timer, defaulting to 10 minutes, but adjustable at the start of each session,
+  - a single start/pause buttonm
+  - the team members, shuffled at the start of each session, with the first name highlighted
+Simple operations:
+  - Tap a name to skip or include that team member in the rotation.
+  - Tap start to start the timer, tap again to pause it.
+  - When one minute is left, timer beeps and starts flashing.
+  - When time is up, timer sounds an alarm, resets time, rotates to the next team member, and waits for start.
+Recording-keeping:
+  - At end of each turn, the app logs to the console the current time, rotation duration setting, the driver, and the navigators.
 
 # Example scenario
 
@@ -32,7 +32,7 @@ Here is an example session.
 - Alice starts the app on her phone. 
 - It shows a countdown timer, set to 10 minutes, a start button, and a shuffled list of team member names with checkmarks.
 - The first name is highlighted. It happens to be Bob.
-- Alice unchecks Bob because he is not there. The highlight moves to Dave.
+- Alice taps Bob's nam because he is not there. The highlight moves to Dave.
 - Dave sits at the keyboard and starts the timer. He begins entering code suggested by the other team members. 
 - Pizza arrives, so Dave stops the timer and grabs a slice. After a few minutes, he starts the timer to continue his turn.
 - A beep at 9 minutes warns the team is almost time to rotate.
