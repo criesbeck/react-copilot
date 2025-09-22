@@ -22,7 +22,7 @@ npm install
 Verify that the initial app works. Run
 
 ```
-npm start
+npm run dev
 ```
 
 Open the URL displayed. Click on the counter to increment it.
@@ -41,7 +41,6 @@ Two tests should run and pass.
 
 | Script           | Description                                         |
 | -----------------| --------------------------------------------------- |
-| npm start        | Runs the app in the development mode.               |
 | npm run dev      | Runs the app in the development mode.               |
 | npm run build    | Builds the app for production to the `dist` folder. |
 | npm run serve    | Serves the production build from the `dist` folder. |

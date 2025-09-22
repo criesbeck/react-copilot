@@ -11,6 +11,7 @@
 An easy to use rotation timer for managing and tracking mob programming sessions.
 
 # Key features
+
 Simple mobile-friendly one-screen design with the app name at the top, and below it:
   - large countdown timer, defaulting to 10 minutes, but adjustable at the start of each session,
   - a single start/pause buttonm
