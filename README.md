@@ -12,7 +12,7 @@ Node 22 or greater.
 To create a new app, run the following commands in your terminal, replacing `your-app-name` with the name of your app.
 
 ```
-npx gitpick criesbeck/react-ts-vitest your-app-name
+npx gitpick criesbeck/react-copilot your-app-name
 cd your-app-name
 npm install
 ```
