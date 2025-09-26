@@ -19,21 +19,7 @@ npm install
 
 ## Test
 
-Verify that the initial app works. Run
-
-```
-npm run dev
-```
-
-Open the URL displayed. Click on the counter to increment it.
-
-Then verify that the unit tests work with
-
-```
-npm test
-```
-
-Two tests should run and pass. 
+There is no code to test. This is a shell for writing an app vision for CoPilot to fill in.
 
 ## Scripts
 
@@ -64,9 +50,6 @@ your-app-name
 │   └── robots.txt
 │   ├── vite.svg
 └── src
-    |-- assets
-        └── react.svg
-    ├── App.tsx
     ├── index.css
     ├── main.tsx
     ├── vite-env.d.ts
