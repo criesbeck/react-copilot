@@ -1,52 +1,86 @@
-# Coding
+# CS394 Agile Software Engineering — Copilot Instructions
 
-You are an expert React and Typescript developer. You use current conventions and best practices.
-You follow Clean Code principles -- small functions, descriptive names, single responsibility, etc.
-You always:
+This is a React + TypeScript web application built with Vite, using Firebase for backend
+services. The tech stack and conventions below are required for all code in this repo.
 
-- Use Vite for the build system.
-- Use Typescript.
-- Use React 19 with React Compiler enabled.
-- Define the main app component in `App.tsx`.
-- Use React hooks for state and lifecycle management.
-- Use React Context for shared state.
-- Use functional components.
-- Use arrow functions.
-- Put each component in its own file, with the file name matching the component name.
-- Use named exports for all components.
-- Let TypeScript infer the return type of component functions.
-- Use `PropsWithChildren` for component props that include children.
-- Put calls to network or database services in separate TypeScript modules.
-- Put shared code in separate TypeScript modules.
-- Indent in prettier format.
-- Fix all linting errors.
-- Use semicolons at the end of each statement.
-- Use single quotes for strings.
-- Use const variables when possible.
-- Use `async/await` for promises.
-- Use `try/catch`d to catch errors in async code.
-- If authentication is needed, use Firebase Google authentication.
-- If a persistent data store is needed, use Firebase Realtime Database.
-- If an app has more than one screen, add a navigation bar with links to each screen.
+---
 
-# Styling
+## Tech Stack
 
-- Use Tailwind 4 for styling.
-- Use Tailwind class names for all styling.
-- Create a responsive design that works for mobile and desktop.
+- **Framework**: React 19 with React Compiler enabled
+- **Language**: TypeScript (strict mode)
+- **Build**: Vite
+- **Styling**: Tailwind CSS v4
+- **Testing**: Vitest + React Testing Library
+- **Backend**: Firebase (Authentication + Cloud Firestore)
 
-# Testing
+---
 
-- Use Vitest for testing.
-- Put test files in the same directory as the component being tested.
-- Use React Testing Library for testing React components.
-- Use `vi.mock()` to mock modules with network or database calls when testing code that imports those modules.
-- Import functions and types into test code explicitly by name.
+## Code Style
 
-## Folder Structure
+Formatting and linting are enforced by Prettier and ESLint — always ensure code passes
+both before considering any task complete. Do not add inline style overrides.
 
-- `/src`: the source code for the frontend
-- `/src/components`: files that define React components
-- `/src/types`: files that define TypeScript types or Zod schemas
-- `/src/utilities`: files that define shared JavaScript, including modules that make network or database calls
-- `/docs`: documentation for the project, including API specifications and user guides
+Additional conventions:
+- Use `const` by default; `let` only when reassignment is required
+- Use `async/await` for all asynchronous code; wrap in `try/catch`
+- Use arrow functions for components and callbacks
+- Use named exports for all components and utilities
+- Let TypeScript infer return types of component functions
+- Use TypeScript interfaces and types in `/src/types/`; prefer `interface` for object shapes
+
+---
+
+## React Patterns
+
+- All components are functional components using React hooks
+- One component per file; filename matches component name (e.g., `UserCard.tsx`)
+- Use React Context for shared state; avoid prop drilling beyond two levels
+- Use `PropsWithChildren` when a component accepts children
+- Navigation bars are required for any app with more than one route
+- Keep components small and focused on a single responsibility
+
+---
+
+## Project Structure
+```
+/src
+  /components    # React components, one per file
+  /hooks         # Custom React hooks
+  /services      # Firebase and external API calls (never in components)
+  /types         # TypeScript types and interfaces
+  /utilities     # Shared pure functions and helpers
+/docs            # API specs, user guides, architecture notes
+```
+
+All Firebase and network calls go in `/src/services/`. Components must not import
+Firebase SDK directly.
+
+---
+
+## Firebase
+
+- Use **Cloud Firestore** for persistent data storage
+- Use **Firebase Authentication** with Google Sign-In for user auth
+- Wrap Firestore calls in service modules with typed return values
+- Handle loading and error states explicitly in any component that fetches data
+
+---
+
+## Testing
+
+- Test files live alongside the component or module they test (`*.test.tsx` / `*.test.ts`)
+- Use React Testing Library; query by role, label, or text — not by test ID unless necessary
+- Mock all Firebase and network calls with `vi.mock()`
+- Import all functions and types explicitly by name in test files
+- Tests must pass before any task is considered complete
+
+---
+
+## What to Avoid
+
+- Do not use class components
+- Do not call Firebase SDK directly inside React components
+- Do not use `any` as a TypeScript type
+- Do not use `useEffect` for data that can be derived from existing state
+- Do not duplicate logic that belongs in a shared utility or hook
