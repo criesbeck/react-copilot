@@ -64,14 +64,16 @@ your-app-name
 ├── vite.config.ts
 ```
 
-## Credits
+## Issues
 
-Built and maintained by [Chris Riesbeck](https://github.com/criesbeck).
+Using TypeScript 5 and ESlint 9 until typescript-eslint and react hook plugins support TS 6 and ESL 10.
+
+## Credits
 
 Inspired by [SafdarJamal/vite-template-react](https://github.com/SafdarJamal/vite-template-react).
 Expanded to include Vitest and some sample tests.
 
-Thanks to Rich Harris for [degit](https://www.npmjs.com/package/degit).
+Thanks to Neeraj Dalal for [gitpick](https://github.com/nrjdalal/gitpick).
 
 Gitignore file created with [the Toptal tool](https://www.toptal.com/developers/gitignore/api/react,firebase,visualstudiocode,macos,windows).
 
